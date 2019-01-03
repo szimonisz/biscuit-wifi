@@ -2,7 +2,7 @@
 
 ## biscuit-euler-wifi:
 
-An Arduino project and it's included libraries configure the Wifi on the Biscuit. Retrieves Euler angles from the orientation sensor and sends them through UDP packets to port 4210 of the local network every 100ms.
+An Arduino project with the libraries needed to configure the Wifi of the Biscuit. Retrieves Euler angles from the orientation sensor and sends them through UDP packets to port 4210 of the local network every 100ms.
 
 ## udp-recv.c:
 
