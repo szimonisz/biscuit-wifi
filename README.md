@@ -14,4 +14,7 @@ make
 ./udp-recv
 ```
 
+To change the port the udp socket is bound to, edit port.h.
+
+
 (A modified version of Paul Krzyzanowski's [demo-udp-03](https://www.cs.rutgers.edu/~pxk/417/notes/sockets/demo-udp-03.html))
