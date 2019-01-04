@@ -4,6 +4,8 @@
 
 Adafruit_BNO055 bno055 = Adafruit_BNO055();
 WiFiUDP Udp;
+char* wifiSSID = "INSERT SSID HERE";
+char* wifiPassword = "INSERT WIFI PASSWORD HERE";
 unsigned int localUdpPort = 4210;
 char message[256];
 
@@ -20,7 +22,7 @@ void setup()
   bno055.begin();
   Serial.println();
 
-  WiFi.begin("SAROLTA", "Kelemen238");
+  WiFi.begin(wifiSSID, wifiPassword);
 
   Serial.print("Connecting");
   while (WiFi.status() != WL_CONNECTED)
