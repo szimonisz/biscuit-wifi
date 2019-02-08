@@ -4,7 +4,7 @@
 
 An Arduino project with the libraries needed to configure the Wifi of the Biscuit. Retrieves sets of data from the orientation sensor and sends them through UDP packets to a user-specified port of a user-specified IP address every 100ms.
 
-Enables biscuit to send orientation values via WiFi, specifically:
+Enables the Biscuit to send orientation values via WiFi, specifically:
 - Euler angles (degrees)
 - Magnetometer xyz values (micro Teslas)
 - Gyroscope xyz values (radians per second)
