@@ -13,6 +13,8 @@ Enables the Biscuit to send orientation values via WiFi, specifically:
 - Gravity xyz values (m/s^2)
 - Quaternion wxyz values (qW,qX,qY,qZ)
 
+If a set of values are unecessary, simply comment out their respective sprintf statement.
+
 ## udp-recv.c:
 
 A C program that sniffs a user-specified port (4210 by default) for UDP packets, parses and displays them as a string. Enables the user to access and observe the orientation data sets provided by the Biscuit in real time - over a Wifi connection.
