@@ -2,11 +2,20 @@
 
 ## biscuit-euler-wifi:
 
-An Arduino project with the libraries needed to configure the Wifi of the Biscuit. Retrieves Euler angles from the orientation sensor and sends them through UDP packets to port 4210 of the local network every 100ms.
+An Arduino project with the libraries needed to configure the Wifi of the Biscuit. Retrieves sets of data from the orientation sensor and sends them through UDP packets to a user-specified port of a user-specified IP address every 100ms.
+
+Enables biscuit to send orientation values via WiFi, specifically:
+- Euler angles (degrees)
+- Magnetometer xyz values (micro Teslas)
+- Gyroscope xyz values (radians per second)
+- Accelerometer xyz values (m/s^2)
+- Linear Acceleration xyz values (m/s^2)
+- Gravity xyz values (m/s^2)
+- Quaternion wxyz values (qW,qX,qY,qZ)
 
 ## udp-recv.c:
 
-A C program that sniffs a designated port (4210) for UDP packets, parses and displays them as a string. Enables the user to access and observe the Euler angles provided by the Biscuit in real time - over a Wifi connection.
+A C program that sniffs a designated port (4210) for UDP packets, parses and displays them as a string. Enables the user to access and observe the orientation data sets provided by the Biscuit in real time - over a Wifi connection.
 
 Command Line Instructions:    
 ```
