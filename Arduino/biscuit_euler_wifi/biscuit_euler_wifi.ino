@@ -65,7 +65,7 @@ void loop() {
     Udp.beginPacket(packetDestinationIP,localUdpPort);
     
     sprintf(message,"[Euler Angles]\nx: %f\ny: %f\nz: %f\n",euler.x(),euler.y(),euler.z());
-    sprintf(message+strlen(message),"[Magnetometer]\nx: %f\ny: %f\nz: %f\n",euler.x(),magnetometer.y(),magnetometer.z());
+    sprintf(message+strlen(message),"[Magnetometer]\nx: %f\ny: %f\nz: %f\n",magnetometer.x(),magnetometer.y(),magnetometer.z());
     sprintf(message+strlen(message),"[Gyroscope]\nx: %f\ny: %f\nz: %f\n",gyroscope.x(),gyroscope.y(),gyroscope.z());
     sprintf(message+strlen(message),"[Accelerometer]\nx: %f\ny: %f\nz: %f\n",accelerometer.x(),accelerometer.y(),accelerometer.z());
     sprintf(message+strlen(message),"[Linear Acceleration]\nx: %f\ny: %f\nz: %f\n",linear_accel.x(),linear_accel.y(),linear_accel.z());
