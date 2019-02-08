@@ -62,8 +62,7 @@ void loop() {
     // Quaternion values (qW,qX,qY,qZ)
     imu::Quaternion quat = bno055.getQuat();
 
-    //Udp.beginPacket(packetDestinationIP,localUdpPort);
-    Udp.beginPacket(remote,localUdpPort);
+    Udp.beginPacket(packetDestinationIP,localUdpPort);
     
     sprintf(message,"[Euler Angles]\nx: %f\ny: %f\nz: %f\n",euler.x(),euler.y(),euler.z());
     sprintf(message+strlen(message),"[Magnetometer]\nx: %f\ny: %f\nz: %f\n",euler.x(),magnetometer.y(),magnetometer.z());
